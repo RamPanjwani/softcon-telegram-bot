@@ -1,5 +1,6 @@
+require('dotenv').config();
 const { Telegraf } = require('telegraf');
-const bot = new Telegraf("7451074111:AAFWWI1xkIw1xbRbCoTC-X0BIF51MzBv_d4");
+const bot = new Telegraf(process.env.BOT_TOKEN);
 console.log("bot is running") 
 let welcome = `
 <b>Welcome to Softcon Business Solutions!</b>
